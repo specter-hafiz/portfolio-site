@@ -116,6 +116,7 @@ a {
   height: 100vh; }
   #header-home .header-content {
     position: relative;
+    z-index: 2;
     text-align: center;
     color: white;
     padding-top: 20%; }
@@ -127,6 +128,9 @@ a {
       line-height: 1.2rem;
       margin: 0 auto;
       padding-bottom: 1rem; }
+    #header-home .header-content a:hover {
+      transition: all 1s;
+      background: #D96B0B; }
   #header-home::before {
     content: "";
     position: absolute;
@@ -134,7 +138,8 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); }
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1; }
 
 #about {
   background: #041159;
@@ -158,9 +163,10 @@ p {
   margin: 0 auto;
   padding-bottom: 3rem; }
 
-a {
-  border-radius: 8px;
-  padding: 0.5rem 1rem; }
+a:hover {
+  transition: all 1s;
+  color: #041159;
+  background: #f4f4f4; }
 
 #skills {
   display: flex;
@@ -224,8 +230,10 @@ a {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.4);
     text-align: center; }
-  #skills .experience {
-    padding: 0 0.1rem; }
+  #skills .experience a:hover {
+    transition: all 1s;
+    color: #f4f4f4;
+    background: #041159; }
 
 #contact {
   display: flex;
@@ -250,8 +258,10 @@ a {
       border-radius: 6px;
       border: none;
       margin-bottom: 0.5rem; }
-    #contact .contact-form a {
-      background: #D96B0B; }
+    #contact .contact-form button {
+      background: #D96B0B;
+      height: 50px;
+      font-size: 1rem; }
 
 #footer {
   display: flex;
@@ -308,14 +318,14 @@ a {
     position: relative;
     background: url(/dist/img/me.jpg) no-repeat 10% 20%/cover;
     object-fit: contain;
-    height: 70vh !important; }
+    height: 80vh !important; }
     #header-home .header-content {
       position: relative;
       text-align: center;
       color: white;
-      padding-top: 30%; }
+      padding-top: 10%; }
       #header-home .header-content h1 {
-        font-size: 1rem;
+        font-size: 2rem;
         margin-bottom: 0.2rem; }
         #header-home .header-content h1 span {
           font-size: 1.5rem; } }
