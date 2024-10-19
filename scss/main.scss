@@ -54,16 +54,13 @@
 // hero header section
 #header {
     &-home {
-        position: relative;
-        background: $bg-image no-repeat 10% 20%/cover;
+        background: $bg-image no-repeat center right / cover;
         height: 100vh;
 
         .header-content {
-            position: relative;
             text-align: center;
             color: white;
             padding-top: 20%;
-            z-index: 2;
 
             h1 {
                 font-size: 3rem;

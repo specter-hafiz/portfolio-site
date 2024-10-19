@@ -111,15 +111,12 @@ a {
     z-index: 10; }
 
 #header-home {
-  position: relative;
-  background: url("/dist/img/me.png") no-repeat 10% 20%/cover;
+  background: url("../img/me.png") no-repeat center right/cover;
   height: 100vh; }
   #header-home .header-content {
-    position: relative;
     text-align: center;
     color: white;
-    padding-top: 20%;
-    z-index: 2; }
+    padding-top: 20%; }
     #header-home .header-content h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem; }
@@ -282,7 +279,7 @@ a {
       font-size: 0.8rem; }
   #header-home {
     position: relative;
-    background: url("/dist/img/me.png") no-repeat 10% 20%/cover;
+    background: url("../img/me.png") no-repeat 10% 20%/cover;
     height: 60vh !important; }
     #header-home .header-content {
       position: relative;
@@ -307,7 +304,7 @@ a {
 @media (min-width: 768px) and (max-width: 1024px) {
   #header-home {
     position: relative;
-    background: url("/dist/img/me.png") no-repeat 10% 20%/cover;
+    background: url("../img/me.png") no-repeat 10% 20%/cover;
     object-fit: contain;
     height: 80vh !important; }
     #header-home .header-content {
