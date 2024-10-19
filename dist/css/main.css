@@ -112,7 +112,7 @@ a {
 
 #header-home {
   position: relative;
-  background: url("/dist/img/showcase.jpg") no-repeat 10% 20%/cover;
+  background: url("/dist/img/me.png") no-repeat 10% 20%/cover;
   height: 100vh; }
   #header-home .header-content {
     position: relative;
@@ -128,20 +128,6 @@ a {
       line-height: 1.2rem;
       margin: 0 auto;
       padding-bottom: 1rem; }
-    #header-home .header-content a:hover {
-      transition: all 0.5s;
-      transform: scale(1.2);
-      background-color: #D96B0B;
-      color: #f4f4f4; }
-  #header-home::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1; }
 
 #about {
   background: #041159;
@@ -296,7 +282,7 @@ a {
       font-size: 0.8rem; }
   #header-home {
     position: relative;
-    background: url("/dist/img/showcase.jpg") no-repeat 10% 20%/cover;
+    background: url("/dist/img/me.png") no-repeat 10% 20%/cover;
     height: 60vh !important; }
     #header-home .header-content {
       position: relative;
@@ -321,7 +307,7 @@ a {
 @media (min-width: 768px) and (max-width: 1024px) {
   #header-home {
     position: relative;
-    background: url("/dist/img/showcase.jpg") no-repeat 10% 20%/cover;
+    background: url("/dist/img/me.png") no-repeat 10% 20%/cover;
     object-fit: contain;
     height: 80vh !important; }
     #header-home .header-content {
