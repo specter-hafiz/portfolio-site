@@ -112,14 +112,14 @@ a {
 
 #header-home {
   position: relative;
-  background: url(/dist/img/me.jpg) no-repeat 10% 20%/cover;
+  background: url("/dist/img/me.jpg") no-repeat 10% 20%/cover;
   height: 100vh; }
   #header-home .header-content {
     position: relative;
-    z-index: 2;
     text-align: center;
     color: white;
-    padding-top: 20%; }
+    padding-top: 20%;
+    z-index: 2; }
     #header-home .header-content h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem; }
@@ -129,8 +129,10 @@ a {
       margin: 0 auto;
       padding-bottom: 1rem; }
     #header-home .header-content a:hover {
-      transition: all 1s;
-      background: #D96B0B; }
+      transition: all 0.5s;
+      transform: scale(1.2);
+      background-color: #D96B0B;
+      color: #f4f4f4; }
   #header-home::before {
     content: "";
     position: absolute;
@@ -148,9 +150,10 @@ a {
   flex-direction: column;
   justify-content: center;
   flex-direction: column; }
-  #about .about-content {
-    text-align: center;
-    color: #f4f4f4; }
+  #about a:hover {
+    transition: all 0.5s;
+    background-color: #f4f4f4;
+    color: #D96B0B; }
 
 h2 {
   font-size: 4rem;
@@ -163,10 +166,9 @@ p {
   margin: 0 auto;
   padding-bottom: 3rem; }
 
-a:hover {
-  transition: all 1s;
-  color: #041159;
-  background: #f4f4f4; }
+a {
+  border-radius: 8px;
+  padding: 0.5rem 1rem; }
 
 #skills {
   display: flex;
@@ -230,10 +232,12 @@ a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.4);
     text-align: center; }
-  #skills .experience a:hover {
-    transition: all 1s;
-    color: #f4f4f4;
-    background: #041159; }
+  #skills .experience {
+    padding: 0 0.1rem; }
+    #skills .experience a:hover {
+      transition: all 0.5s;
+      background: #041159;
+      color: #f4f4f4; }
 
 #contact {
   display: flex;
@@ -259,9 +263,10 @@ a:hover {
       border: none;
       margin-bottom: 0.5rem; }
     #contact .contact-form button {
-      background: #D96B0B;
-      height: 50px;
-      font-size: 1rem; }
+      height: 40px;
+      background: #D96B0B; }
+      #contact .contact-form button:hover {
+        opacity: 0.8; }
 
 #footer {
   display: flex;
@@ -291,7 +296,7 @@ a:hover {
       font-size: 0.8rem; }
   #header-home {
     position: relative;
-    background: url(/dist/img/me.jpg) no-repeat 10% 20%/cover;
+    background: url("/dist/img/me.jpg") no-repeat 10% 20%/cover;
     height: 60vh !important; }
     #header-home .header-content {
       position: relative;
@@ -316,7 +321,7 @@ a:hover {
 @media (min-width: 768px) and (max-width: 1024px) {
   #header-home {
     position: relative;
-    background: url(/dist/img/me.jpg) no-repeat 10% 20%/cover;
+    background: url("/dist/img/me.jpg") no-repeat 10% 20%/cover;
     object-fit: contain;
     height: 80vh !important; }
     #header-home .header-content {
