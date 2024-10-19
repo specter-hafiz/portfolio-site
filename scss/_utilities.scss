@@ -1,0 +1,123 @@
+@import "config";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: $primary-color;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $light-color;
+}
+
+
+
+.container {
+    max-width: $website-width;
+    padding: 0 1rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.py-1 {
+    padding: 1rem 0;
+}
+
+.py-2 {
+    padding: 2rem 0;
+}
+
+.py-3 {
+    padding: 3rem 0;
+}
+
+.py-4 {
+    padding: 4rem 0;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+.my-3 {
+    margin: 3rem 0;
+}
+
+.my-4 {
+    margin: 4rem 0;
+}
+
+.bg {
+    &-main {
+        background-color: $primary-color;
+        color: set-text-color($primary-color);
+    }
+
+    &-light {
+        background-color: $light-color;
+        color: set-text-color($light-color);
+    }
+
+    &-dark {
+        background-color: $dark-color;
+        color: set-text-color($dark-color);
+    }
+
+}
+
+%btn-shared {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn {
+    &-primary {
+        @extend %btn-shared;
+        background-color: $primary-color;
+        color: #fff;
+
+    }
+
+    &-secondary {
+        @extend %btn-shared;
+        background-color: $secondary-color;
+        color: $light-color;
+
+    }
+
+    &-light {
+        @extend %btn-shared;
+        background-color: $light-color;
+        color: $dark-color
+    }
+}
+
+.bottom-line {
+    width: 5rem;
+    height: 2px;
+    background: $secondary-color;
+    margin: 0 auto 1rem auto;
+    display: block;
+}
+
+.text-center {
+    text-align: center;
+}

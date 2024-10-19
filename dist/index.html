@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>Hafiz Huaru | Mobile Application Developer</title>
+    
+</head>
+<body>
+    <!-- hero section -->
+     <header id="header-home">
+        <div class="container">
+             <nav id="main-navbar">
+                <a href="#header-home" class="icon btn">
+                    <i class="fas fa-house fa-2x"></i>
+                </a>
+                <ul>
+                    <li><a href="#about" class="btn">About</a></li>
+                    <li><a href="#skills" class="btn">Skills</a></li>
+                    <li><a href="#contact" class="btn">Contact</a></li>
+                </ul>
+                
+            </nav>
+            <div class="header-content py-1">
+                <h1>
+                    I Am Hafiz, The
+                    <span
+                    class="txt-type"
+                    data-wait="3000"
+                    data-words='["Mobile App Developer", "Web Developer", "Graphic Designer"]'
+                    ></span>
+                </h1>
+                <p class="lead">
+                    I specialize in creating mobile applications and websites for individuals and businesses.
+                     I also offer graphic design services for those looking to improve their brand.
+                </p>
+                <a href="#contact" class="btn-primary btn">Contact Me</a>
+            </div>
+
+        </div>
+     </header>
+
+     <!-- about section -->
+      <section id="about" class="text-center py-4">
+        <div class="container">
+            <h2 >
+               Who Am I ?
+            </h2>
+            <div class="bottom-line"></div>
+            <p>
+                I am a mobile application developer with a passion for creating beautiful and functional applications.  I am dedicated to delivering high-quality work that meets the needs of my clients and helps them achieve their goals.
+            </p>
+            <p>
+                I have experience working with a variety of programming languages and frameworks, and I am always looking to expand my skill set.
+            </p>
+            <p>
+                I am committed to providing excellent customer service and building strong relationships with my clients. I am always looking for new opportunities to learn and grow as a developer, and I am excited to see what the future holds.
+            </p>
+
+            <a href="" class="btn-secondary">View My Projects</a>
+        </div>
+      </section>
+      <!-- skills section -->
+       <section id="skills" class="text-center py-4 ">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="bottom-line"></div>
+            <div class="skills-set ">
+                    <div class="skill-1">
+                      <img src="img/flutter.png" alt="">
+                        <h3>Flutter</h3>
+                    </div>
+                    <div class="skill-2">
+                        <img src="img/dart.png" alt="">
+                        <h3>Dart</h3>
+                    </div>
+               
+                    <div class="skill-3">
+                        <img src="img/firebase.png" alt="">
+                        <h3>Firebase</h3>
+                    </div>
+                    <div class="skill-4">
+                       <img src="img/html.png" alt="">
+                        <h3>HTML</h3>
+                    </div>
+               
+                    <div class="skill-5">
+                       <img src="img/css.png" alt="">
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="skill-6">
+                        <img src="img/js.png" alt="">
+                        <h3>JavaScript</h3>
+                    </div>
+               
+                    <div class="skill-7">
+                       <img src="img/django.png" alt="">
+                        <h3>Django</h3>
+                    </div>
+                    <div class="skill-8">
+                        <img src="img/python.png" alt="">
+                        <h3>Python</h3>
+                    </div>
+                    <div class="experience">
+                    
+                    <a href="https://drive.google.com/uc?export=download&id=1HJYKpIbmeIcl-5sRUZ5RIy-EznN1KnlK
+            " class="btn-light my-2" download="Hafiz-Huaru-Resume.pdf">Download My Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </section>
+        <!--contact form  -->
+        <section id="contact" class="text-center py-4">
+          <div class="container">
+              <h2>Let's have a Chat</h2>
+              <div class="bottom-line"></div>
+            <form name="contact" method="POST" data-netlify="true" class="contact-form ">
+                <input type="text" id="name" placeholder="Name">
+                <input type="email" id="email" placeholder="Email">
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <button type="submit" class="btn-secondary">Submit</button>
+            </form>
+          </div>
+          
+        </section>
+        <footer id="footer" >
+           <div class="items">
+             <h4>Copyright &copy; 2024</h4>
+             <a href="https://www.linkedin.com/in/hafiz-huaru-/" target="_blank">
+                <i class="fa-brands fa-linkedin "></i>
+             </a>
+            <a href="https://github.com/Specter-Hafiz/" target="_blank">
+                <i class="fa-brands fa-github "></i>
+                </a>            
+            </div>
+          </footer>
+
+      
+     <!-- typing effect  -->
+    <script src="js/typewriter.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        // smooth scrolling
+        $(".btn").on('click', function (e) {
+            if (this.hash !== "") {
+                e.preventDefault();
+                const hash = this.hash;
+                $("html, body").animate({
+                    scrollTop: $(hash).offset().top
+                }, 1000);
+            }
+        });
+
+    </script>
+
+</body>
+</html>
