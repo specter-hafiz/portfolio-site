@@ -289,7 +289,7 @@ a {
       color: white;
       padding-top: 30%; }
       #header-home .header-content h1 {
-        font-size: 1rem;
+        font-size: 2rem;
         margin-bottom: 0.2rem; }
         #header-home .header-content h1 span {
           font-size: 1.5rem; }
@@ -298,7 +298,10 @@ a {
     grid-template-areas: 'skill-1 ' 'skill-2 ' 'skill-3 ' 'skill-4 ' 'skill-5 ' 'skill-6' 'skill-7' 'skill-8' 'exp ';
     grid-gap: 0.3rem; }
     #skills .skills-set h3 {
-      color: #f4f4f4; } }
+      color: #f4f4f4; }
+  #contact h2 {
+    margin: 1rem 0;
+    font-size: 2rem; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   #header-home {
